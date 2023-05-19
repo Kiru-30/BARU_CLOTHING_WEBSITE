@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<title>Baru Clothing</title>
+	</head>
+	<body>
+		<!-- NAVBAR AND LINKS -->
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top img-fluid" style="background-color: bisque; font-family: MyCustomFont2;">
+				<div class="container-fluid container align-content-center">
+					<!-- Logo and title -->
+					<a class="navbar-brand fs-3 fw-bold text-uppercase" href="index.html">
+						<img src="./img/Logo.png" alt="Logo" height="40" class="d-inline-block align-text-top ">
+						<span class="d-none d-sm-inline-block ">Baru Clothing</span>
+						<span class="d-inline-block d-sm-none">Baru</span>
+					</a>
+					<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navigation links -->
+					<div class="collapse navbar-collapse fw-bold" id="navbarNav">
+						<ul class="navbar-nav ms-auto  ">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </a>
+								<ul class="dropdown-menu" aria-labelledby="shopDropdown">
+									<li>
+										<a class="dropdown-item " href="shop.html">Collections</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="perfume.html">Perfumes</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="accessories.html">Accessories</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="newarrival.html">New Arrivals</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index.html#featured-collections">Featured Collections</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> About </a>
+								<ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+									<li>
+										<a class="dropdown-item" href="story.html">Our Story/Values</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="gallery.html">Gallery</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index.html#blog">Blog</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<a class="nav-link" href="cart.html"> Cart <i class="bi bi-cart-fill"></i>
+							</a>
+							<!-- Login and signup forms -->
+							<li class="nav-item dropdown">
+								<a class="nav-link " href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="bi bi-person"></i> Login </a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown" style="width: 20rem;">
+									<li>
+										<form class="px-4 py-3">
+											<div class="mb-3">
+												<label for="loginEmail" class="form-label">Email address</label>
+												<input type="email" class="form-control" id="loginEmail" placeholder="email@example.com">
+											</div>
+											<div class="mb-3">
+												<label for="loginPassword" class="form-label">Password</label>
+												<input type="password" class="form-control" id="loginPassword" placeholder="Password">
+											</div>
+											<div class="form-check mb-3">
+												<input type="checkbox" class="form-check-input" id="rememberMe">
+												<label class="form-check-label" for="rememberMe">Remember me</label>
+											</div>
+											<button type="submit" class="btn">Sign in</button>
+										</form>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">New around here? Sign up</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="d-flex ms-auto">
+							<input class="form-control me-2" type="search" placeholder="Search Our Store" aria-label="Search">
+							<button class="btn" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- ABOUT US -->
+		<main>
+			<section id="about" class="pt-5 lead fw-normal">
+				<div class="container mt-5">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<h2 class="fw-bold mb-4 top-bottom">About Us</h2>
+							<p class="left-right">Baru Clothing is a fashion brand dedicated to providing high-quality clothing for men and women. Our mission is to inspire confidence and style through our unique designs and exceptional customer service.</p>
+							<p class="left-right">At Baru Clothing, we pride ourselves on our attention to detail and commitment to using only the finest materials. This is why our customers choose us over other fashion brands.</p>
+							<p class="left-right">In addition to our focus on quality, we also offer a wide range of styles to suit any occasion or personal taste. From casual wear to formal attire, Baru Clothing has you covered.</p>
+							<p class="left-right">If you have any questions or would like to learn more about our brand, please don't hesitate to contact us.</p>
+							<a href="contact.html" class="btn shadow my-4 bottom-top">Contact Us</a>
+						</div>
+						<div class="col-lg-6">
+							<img src="./img/design imgs/Group3.png" class="img-fluid rounded-top-pill rounded-bottom-5 my-4 mx-auto d-block d-none d-lg-block bottom-top" alt="Image description" style="max-width: 500px;">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- OUR STORY -->
+			<section class="our-story">
+				<div class="container py-3">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-lg-6 align-items-center ">
+							<h2 class="my-4 fw-bold revealX">Our Story</h2>
+							<p class="mb-4 lead fw-normal revealX">Our passion for design and innovation has led us to create some of the most beloved products in the industry.</p>
+							<p class="mb-4 lead fw-normal revealX">From our humble beginnings in a small garage to our current state-of-the-art facility, we have always been dedicated to providing our customers with the best products and services possible.</p>
+							<p class="mb-4 lead fw-normal revealX">We pride ourselves on our attention to detail and commitment to excellence. Whether you're a new customer or a longtime fan, we look forward to continuing to serve you for many years to come.</p>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<img src="./img/items/story1.png" class="img-fluid d-none d-lg-block mx-auto revealY" style="max-width: 500px;">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- VALUES -->
+		<section class="values-section py-5 bg-light">
+			<div class="container">
+				<h2 class="text-center mb-5 fw-bold revealX">Our Values</h2>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card h-100 border-0 shadow-sm align-items-center revealY">
+							<img src="./img/icons/quality.svg" class="card-img-top pt-3" alt="Value 1" style="width: 150px;">
+							<div class="card-body text-center">
+								<h5 class="card-title">Quality</h5>
+								<p class="card-text">We believe in providing the highest quality products and services to our customers. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100 border-0 shadow-sm align-items-center revealY">
+							<img src="./img/icons/customerservice.svg" class="card-img-top pt-3" alt="Value 2" style="width: 150px;">
+							<div class="card-body text-center">
+								<h5 class="card-title">Customer Service</h5>
+								<p class="card-text">We are dedicated to providing excellent customer service and support.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100 border-0 shadow-sm align-items-center revealY">
+							<img src="./img/icons/sustain.svg" class="card-img-top pt-3" alt="Value 3" style="width: 150px;">
+							<div class="card-body text-center">
+								<h5 class="card-title">Sustainability</h5>
+								<p class="card-text">We are committed to sustainability and reducing our impact on the environment.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer class="bg-dark text-white py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<h5>About Us</h5>
+						<p>We are a clothing store that specializes in high-quality and stylish clothing for men and women.</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h5>Customer Services</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="faq.html" class="text-decoration-none">FAQ</a>
+							</li>
+							<li>
+								<a href="sizechart.html" class="text-decoration-none">Size Chart</a>
+							</li>
+							<li>
+								<a href="review.html" class="text-decoration-none">Customer Reviews</a>
+							</li>
+							<li>
+								<a href="return.html" class="text-decoration-none">Return Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-12 py-3 col-lg-5">
+						<h5>Sign up for Our Newsletter</h5>
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+								<button class="btn" type="button" id="button-addon2">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr class="my-2">
+				<div class="col-lg-12 text-center">
+					<h5>Connect with Us</h5>
+					<div class="d-flex flex-row py-2 social-icons justify-content-center">
+						<a href="https://web.facebook.com/Barukapampangan" target="_blank" type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-twitter"></i>
+						</a>
+						<a type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container text-center mt-2">
+						<p class="mb-1">Designed by Team 13 IT 23 Web System and Technology</p>
+					</div>
+					<div class="col-md-12 text-center">
+						<p>&copy; 2023 Clothing Store. All rights reserved.</p>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="d-flex justify-content-center">
+							<a href="privacypolicy.html" class="text-decoration-none me-2">Privacy Policy</a>
+							<a href="termofuse.html" class="text-decoration-none me-2">Terms of Use</a>
+							<a href="contact.html" class="text-decoration-none me-2">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<style>
+			.left-right {
+				animation-name: slideInFromLeft;
+				animation-duration: 2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.right-left {
+				animation-name: slideInFromRight;
+				animation-duration: 2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.bottom-top {
+				animation-name: slideInFromBottom;
+				animation-duration: 2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.top-bottom {
+				animation-name: slideInFromTop;
+				animation-duration: 2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			/* Animation keyframes */
+			/* Left to Right */
+			@keyframes slideInFromLeft {
+				0% {
+					transform: translateX(-100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			/* Right to Left*/
+			@keyframes slideInFromRight {
+				0% {
+					transform: translateX(100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			/* Bottom to Top*/
+			@keyframes slideInFromBottom {
+				0% {
+					transform: translateY(100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes slideInFromTop {
+				0% {
+					transform: translateY(-100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			/* Reveal Animation */
+			/* revealY For Y Axis */
+			.revealY {
+				position: relative;
+				transform: translateY(120px);
+				opacity: 0;
+				transition: all .8s ease;
+			}
+
+			.revealY.active {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			/* revealX For X Axis */
+			.revealX {
+				position: relative;
+				transform: translateX(-120px);
+				opacity: 0;
+				transition: all .8s ease;
+			}
+
+			.revealX.active {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		</style>
+		<!-- Javascript for animation on y Axis -->
+		<script type="text/javascript">
+			window.addEventListener('scroll', revealY);
+
+			function revealY() {
+				var reveals = document.querySelectorAll('.revealY');
+				for (var i = 0; i < reveals.length; i++) {
+					var windowheight = window.innerHeight;
+					var revealtop = reveals[i].getBoundingClientRect().top;
+					var revealpoint = 50;
+					if (revealtop < windowheight - revealpoint) {
+						reveals[i].classList.add('active');
+					}
+				}
+			}
+		</script>
+		<!-- Javascript for animation on x Axis -->
+		<script type="text/javascript">
+			window.addEventListener('scroll', revealX);
+
+			function revealX() {
+				var reveals = document.querySelectorAll('.revealX');
+				for (var i = 0; i < reveals.length; i++) {
+					var windowheight = window.innerHeight;
+					var revealtop = reveals[i].getBoundingClientRect().top;
+					var revealpoint = 50;
+					if (revealtop < windowheight - revealpoint) {
+						reveals[i].classList.add('active');
+					}
+				}
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	</body>
+</html>

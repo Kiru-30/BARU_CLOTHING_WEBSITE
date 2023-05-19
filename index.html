@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<title>Baru Clothing</title>
+	</head>
+	<body>
+		<div class="preloader">
+			<div class="loader"></div>
+		</div>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top img-fluid" style="background-color: bisque; font-family: MyCustomFont2;">
+				<div class="container-fluid container  align-items-center">
+					<!-- Logo and title -->
+					<a class="navbar-brand fs-3 fw-bold text-uppercase" href="index.html">
+						<img src="./img/Logo.png" alt="Logo" height="40" class="d-inline-block align-text-top ">
+						<span class="d-none d-sm-inline-block">Baru Clothing</span>
+						<span class="d-inline-block d-sm-none">Baru</span>
+					</a>
+					<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navigation links -->
+					<div class="collapse navbar-collapse fw-bold" id="navbarNav">
+						<ul class="navbar-nav ms-auto  ">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </a>
+								<ul class="dropdown-menu" aria-labelledby="shopDropdown">
+									<li>
+										<a class="dropdown-item " href="shop.html">Collections</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="perfume.html">Perfumes</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="accessories.html">Accessories</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="newarrival.html">New Arrivals</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index.html#featured-collections">Featured Collections</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> About </a>
+								<ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+									<li>
+										<a class="dropdown-item" href="story.html">Our Story/Values</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="gallery.html">Gallery</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index.html#blog">Blog</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<a class="nav-link" href="cart.html"> Cart <i class="bi bi-cart-fill"></i>
+							</a>
+							<!-- Login and signup forms -->
+							<li class="nav-item dropdown">
+								<a class="nav-link " href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="bi bi-person"></i> Login </a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown" style="width: 20rem;">
+									<li>
+										<form class="px-4 py-3">
+											<div class="mb-3">
+												<label for="loginEmail" class="form-label">Email address</label>
+												<input type="email" class="form-control" id="loginEmail" placeholder="email@example.com">
+											</div>
+											<div class="mb-3">
+												<label for="loginPassword" class="form-label">Password</label>
+												<input type="password" class="form-control" id="loginPassword" placeholder="Password">
+											</div>
+											<div class="form-check mb-3">
+												<input type="checkbox" class="form-check-input" id="rememberMe">
+												<label class="form-check-label" for="rememberMe">Remember me</label>
+											</div>
+											<button type="submit" class="btn">Sign in</button>
+										</form>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">New around here? Sign up</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="d-flex ms-auto">
+							<input class="form-control me-2" type="search" placeholder="Search Our Store" aria-label="Search">
+							<button class="btn" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!--Showcase LANDING-->
+			<section class="bg-image text-white  p-5 text-center text-sm-start mt-5 fw-bolder " style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); background-color: bisque;">
+				<div class="container">
+					<div class="d-sm-flex align-items-center justify-content-between text-sm-center text-md-start">
+						<div>
+							<h1 class="pb-2 main-heading fw-bold top-bottom">We strive to empower you to express your personal style with confidence.</h1>
+							<!-- <h4> is hidden on medium and smaller screens (d-none d-md-block), and an <h5> is shown on small and extra-small screens (d-sm-block d-md-none) -->
+							<h4 class="pb-4 d-none d-sm-block left-right" style="color: rgb(255, 255, 255);">Discover fashion that reflects your unique personality and style with our carefully curated collections.</h4>
+							<a href="shop.html">
+								<button class="btn btn-lg text-black hover bottom-top btn-showcase" style="background-color: #fce2b6; text-shadow: none;">Explore our Collections</button>
+							</a>
+						</div>
+						<img class="img-fluid w-50 d-none d-md-block top-bottom" src="./img/landingImg.png" alt="">
+					</div>
+				</div>
+			</section>
+			<!-- SHOWCASE COLLECTION -->
+			<section class="collection-showcase">
+				<div class="container emp-div pt-sm-5 pt-5">
+					<div class="row align-items-center justify-content-md-end">
+						<div class="col-md-6 text-md-center text-sm-center collection-txt">
+							<h1 class="fw-bolder pb-sm-3 pt-sm-3 left-right" style="font-family: MyCustomFont2 ,sans-serif; font-size: 60px;"> Express Your Style With Confidence</h1>
+						</div>
+						<div class="col-md-6 py-5">
+							<img src="./img/items/style.png" class="img-fluid left-right" alt="...">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CAROUSEL -->
+			<section class="featured">
+				<div class=" text-center container">
+					<div class="collections-heading" id="featured-collections">
+						<h1 class="py-4 py-lg-5 pb-lg-3 revealX" style="font-family: MyCustomFont2 ,sans-serif;">Featured Collections </h1>
+					</div>
+					<div id="carouselExampleCaptions" class="carousel slide rev revealX" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./img/items/car3.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="fw-bold" style="color: #fff;">Featured Collection 1</h5>
+									<p class="fw-light" style="color: #fff;">Some representative placeholder content for the first slide. </p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./img/items/car2.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="fw-bold" style="color: #fff;">Featured Collection 2</h5>
+									<p class="fw-light" style="color: #fff;">Some representative placeholder content for the second slide. </p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- COLLECTIONS -->
+			<section class="collection-featured-cards">
+				<div class="container pt-5">
+					<div class="row">
+						<div class="col-md-6 col-lg-3 col-sm-6 mb-4 revealY">
+							<div class="card" style="border: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+								<img src="./img/shirts/f1.jpg" class="card-img-top img-fluid h-auto" alt="Shop Baru Clothes 1" style="height: 350px; object-fit: cover;">
+								<div class="card-body">
+									<h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">Baru Clothes 1</h5>
+									<div class="d-flex align-items-center mb-2">
+										<div class="stars me-2">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<i class="bi bi-star"></i>
+										</div>
+										<span class="text-muted">(15)</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-4">
+										<p class="card-text fw-bold m-0" style="font-size: 1.25rem;">₱350.00</p>
+										<div class="d-flex align-items-center">
+											<i class="bi bi-heart me-2" style="font-size: 1.5rem;"></i>
+											<i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+										</div>
+									</div>
+									<div class="d-grid gap-2">
+										<button class="btn" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 col-sm-6 mb-4 revealY">
+							<div class="card " style="border: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+								<img src="./img/shirts/f2.jpg" class="card-img-top img-fluid h-auto" alt="Shop Baru Clothes 1" style="height: 350px; object-fit: cover;">
+								<div class="card-body">
+									<h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">Baru Clothes 2</h5>
+									<div class="d-flex align-items-center mb-2">
+										<div class="stars me-2">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<i class="bi bi-star"></i>
+										</div>
+										<span class="text-muted">(15)</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-4">
+										<p class="card-text fw-bold m-0" style="font-size: 1.25rem;">₱350.00</p>
+										<div class="d-flex align-items-center">
+											<i class="bi bi-heart me-2" style="font-size: 1.5rem;"></i>
+											<i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+										</div>
+									</div>
+									<div class="d-grid gap-2">
+										<button class="btn" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 mb-4 col-sm-6 revealY">
+							<div class="card " style="border: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+								<img src="./img/shirts/f3.jpg" class="card-img-top img-fluid h-auto" alt="Shop Baru Clothes 1" style="height: 350px; object-fit: cover;">
+								<div class="card-body">
+									<h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">Baru Clothes 3</h5>
+									<div class="d-flex align-items-center mb-2">
+										<div class="stars me-2">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<i class="bi bi-star"></i>
+										</div>
+										<span class="text-muted">(15)</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-4">
+										<p class="card-text fw-bold m-0" style="font-size: 1.25rem;">₱350.00</p>
+										<div class="d-flex align-items-center">
+											<i class="bi bi-heart me-2" style="font-size: 1.5rem;"></i>
+											<i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+										</div>
+									</div>
+									<div class="d-grid gap-2">
+										<button class="btn" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 mb-4 col-sm-6 revealY">
+							<div class="card " style="border: none; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+								<img src="./img/shirts/f4.jpg" class="card-img-top img-fluid h-auto" alt="Shop Baru Clothes 1" style="height: 350px; object-fit: cover;">
+								<div class="card-body">
+									<h5 class="card-title mb-3" style="font-size: 1.25rem; font-weight: bold;">Baru Clothes 4</h5>
+									<div class="d-flex align-items-center mb-2">
+										<div class="stars me-2">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i>
+											<i class="bi bi-star"></i>
+										</div>
+										<span class="text-muted">(15)</span>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-4">
+										<p class="card-text fw-bold m-0" style="font-size: 1.25rem;">₱350.00</p>
+										<div class="d-flex align-items-center">
+											<i class="bi bi-heart me-2" style="font-size: 1.5rem;"></i>
+											<i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+										</div>
+									</div>
+									<div class="d-grid gap-2">
+										<button class="btn" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="revealX py-3 text-center text-md-start lead fw-normal">At Our Shop, we believe that fashion is not just about looking good, but also feeling confident. That's why we provide high-quality clothing and accessories that help our customers express their unique style and feel empowered.</p>
+						<!-- Modal -->
+						<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="buyNowModalLabel">Buy Now</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-md-6">
+												<img src="./img/shirts/f1.jpg" class="img-fluid" alt="Shop Baru Clothes 1">
+											</div>
+											<div class="col-md-6">
+												<form>
+													<div class="mb-3">
+														<label for="name" class="form-label">Name</label>
+														<input type="text" class="form-control" id="name" placeholder="Enter your name">
+													</div>
+													<div class="mb-3">
+														<label for="email" class="form-label">Email</label>
+														<input type="email" class="form-control" id="email" placeholder="Enter your email">
+													</div>
+													<div class="mb-3">
+														<label for="address" class="form-label">Address</label>
+														<textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+													</div>
+													<div class="mb-3">
+														<label for="quantity" class="form-label">Quantity</label>
+														<input type="number" class="form-control" id="quantity" min="1" value="1">
+													</div>
+													<div class="mb-3">
+														<label for="size" class="form-label">Size</label>
+														<select class="form-select" id="size">
+															<option selected disabled>Select size</option>
+															<option value="small">Small</option>
+															<option value="medium">Medium</option>
+															<option value="large">Large</option>
+														</select>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn ">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+			</section>
+			<!-- SHOWCASE -->
+			<section class="bg-image d-flex align-items-center  revealY" style="background-image: url('./img/items/show1.jpg'); height: 500px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center text-white">
+							<h1 class="section-title fw-bolder" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: MyCustomFont2, sans-serif;">Original you. Original style.</h1>
+							<p class="section-subtitle fw-medium lead" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); font-family: MyCustomFont2, sans-serif;">Discover our unique collection</p>
+							<a href="shop.html" class="btn  btn-shop-now">
+								<i class="bi bi-bag-fill me-2"></i> Shop Now </a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- OFFER -->
+			<section class="offer">
+				<div class="container pt-5">
+					<div class="row justify-content-center">
+						<div class="col-md-4 col-sm-12 text-center revealY">
+							<img src="./img/icons/fashion.svg" class="img-fluid mb-3" style="max-width: 150px;" alt="Slow Fashion Icon">
+							<h3 class="fw-bold mb-3" style="font-family: MyCustomFont2;">Slow Fashion</h3>
+							<p class="mb-5">Shop quality wardrobe staples that support ethical fair trade practices and our local communities.</p>
+						</div>
+						<div class="col-md-4 col-sm-12 text-center revealY">
+							<img src="./img/icons/heart.svg" class="img-fluid mb-3" style="max-width: 150px;" alt="Small Batch Finds Icon">
+							<h3 class="fw-bold mb-3" style="font-family: MyCustomFont2;">Small Batch Finds</h3>
+							<p class="mb-5">Shop limited one-of-a-kind products created by local skilled artisans.</p>
+						</div>
+						<div class="col-md-4 col-sm-12 text-center revealY">
+							<img src="./img/icons/self.svg" class="img-fluid mb-3" style="max-width: 150px;" alt="Sustainable Self Care Icon">
+							<h3 class="fw-bold mb-3" style="font-family: MyCustomFont2;">Sustainable Self Care</h3>
+							<p class="mb-5">Shop essentials that advocate for environmental and holistic causes.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- BLOG -->
+			<section id="blog" class="py-lg-5">
+				<div class="container">
+					<div class="row mb-3">
+						<div class="col text-center">
+							<h2 class="revealX">Latest from our Blog</h2>
+							<hr class="mx-auto" style="width: 5rem;">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 mb-5">
+							<div class="card revealY">
+								<img src="./img/items/blog1 1.png" class="card-img-top img-fluid " alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Blog Post Title</h5>
+									<p class="card-text d-sm-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna.</p>
+									<p class="card-text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna. Duis nec sagittis nulla. Nam non mi eu dolor egestas sollicitudin nec quis nibh.</p>
+									<a href="#" class="btn btn-outline-dark">
+										<i class="bi bi-arrow-right-circle"></i> Read More </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-5">
+							<div class="card revealY">
+								<img src="./img/items/blog2 1.png" class="card-img-top img-fluid" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Blog Post Title</h5>
+									<p class="card-text d-sm-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna.</p>
+									<p class="card-text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna. Duis nec sagittis nulla. Nam non mi eu dolor egestas sollicitudin nec quis nibh.</p>
+									<a href="#" class="btn btn-outline-dark">
+										<i class="bi bi-arrow-right-circle"></i> Read More </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-5">
+							<div class="card revealY">
+								<img src="./img/items/blog3 1.png" class="card-img-top img-fluid " alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Blog Post Title</h5>
+									<p class="card-text d-sm-block d-lg-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna.</p>
+									<p class="card-text d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio urna. Duis nec sagittis nulla. Nam non mi eu dolor egestas sollicitudin nec quis nibh.</p>
+									<a href="#" class="btn btn-outline-dark">
+										<i class="bi bi-arrow-right-circle"></i> Read More </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FSC -->
+			<section class="FSC">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 text-center revealY">
+							<i class="bi bi-truck icon-lg mb-3"></i>
+							<h4 class="mb-3">Free Shipping and Returns</h4>
+							<p class="text-muted">We offer free shipping and returns for all orders over 200 pesos.</p>
+						</div>
+						<div class="col-md-4 text-center revealY">
+							<i class="bi bi-shield-lock icon-lg mb-3"></i>
+							<h4 class="mb-3">Secured Payments</h4>
+							<p class="text-muted">All payments are secured with industry-leading encryption and fraud protection.</p>
+						</div>
+						<div class="col-md-4 text-center revealY">
+							<i class="bi bi-headset icon-lg mb-3"></i>
+							<h4 class="mb-3">Customer Service</h4>
+							<p class="text-muted">Our dedicated customer service team is available 24/7 to assist with any questions or concerns.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- LET'S CHAT -->
+			<section class="lets-chat py-5">
+				<div class="container">
+					<div class="row justify-content-center revealX">
+						<div class="col-lg-6 text-center">
+							<h2>Let's Chat</h2>
+							<p class="lead">Got any questions or concerns? We're here to help. Feel free to send us a message.</p>
+							<a href="#" class="btn mt-3">
+								<i class="bi bi-chat-dots"></i> Start a chat </a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- FOOTER -->
+		<footer class="bg-dark text-light py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<h5>About Us</h5>
+						<p>We are a clothing store that specializes in high-quality and stylish clothing for men and women.</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h5>Customer Services</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a href="faq.html" class="text-decoration-none">FAQ</a>
+							</li>
+							<li>
+								<a href="sizechart.html" class="text-decoration-none">Size Chart</a>
+							</li>
+							<li>
+								<a href="review.html" class="text-decoration-none">Customer Reviews</a>
+							</li>
+							<li>
+								<a href="return.html" class="text-decoration-none">Return Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-12 py-3 col-lg-5">
+						<h5>Sign up for Our Newsletter</h5>
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+								<button class="btn" type="button" id="button-addon2">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr class="my-2">
+				<div class="col-lg-12 text-center">
+					<h5>Connect with Us</h5>
+					<div class="d-flex flex-row py-2 social-icons justify-content-center">
+						<a href="https://web.facebook.com/Barukapampangan" target="_blank" type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-twitter"></i>
+						</a>
+						<a type="button" class="btn btn-lg mx-1">
+							<i class="bi bi-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container text-center mt-2">
+						<p class="mb-1">Designed by Team 13 IT 23 Web System and Technology</p>
+					</div>
+					<div class="col-md-12 text-center">
+						<p>&copy; 2023 Clothing Store. All rights reserved.</p>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="d-flex justify-content-center">
+							<a href="privacypolicy.html" class="text-decoration-none me-2">Privacy Policy</a>
+							<a href="termofuse.html" class="text-decoration-none me-2">Terms of Use</a>
+							<a href="contact.html" class="text-decoration-none me-2">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<style>
+			/* 
+			
+																																						
+			<!-- Styling for background image in index.html --> */
+			.bg-image {
+				background-image: url('./img/Background.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+
+			/* Dropdown animation keyframes */
+			@keyframes fadeInDown {
+				from {
+					opacity: 0;
+					transform: translate3d(0, -10%, 0);
+				}
+
+				to {
+					opacity: 1;
+					transform: none;
+				}
+			}
+
+			/* Text animation */
+			.collection-showcase .collection-txt h1 {
+				animation-name: slideInFromLeft;
+				animation-duration: 1.5s;
+				animation-fill-mode: both;
+			}
+
+			/* Image animation */
+			/*.collection-showcase img {
+      animation-name: fadeIn;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+}*/
+			.left-right {
+				animation-name: slideInFromLeft;
+				animation-duration: 3.2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.right-left {
+				animation-name: slideInFromRight;
+				animation-duration: 3.2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.bottom-top {
+				animation-name: slideInFromBottom;
+				animation-duration: 3.2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			.top-bottom {
+				animation-name: slideInFromTop;
+				animation-duration: 3.2s;
+				animation-fill-mode: both;
+				transition-timing-function: ease-in-out
+			}
+
+			/* Animation keyframes */
+			/* Left to Right */
+			@keyframes slideInFromLeft {
+				0% {
+					transform: translateX(-100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			/* Right to Left*/
+			@keyframes slideInFromRight {
+				0% {
+					transform: translateX(100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+
+			/* Bottom to Top*/
+			@keyframes slideInFromBottom {
+				0% {
+					transform: translateY(100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes slideInFromTop {
+				0% {
+					transform: translateY(-100%);
+					opacity: 0;
+				}
+
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+
+			/* COLLECTION CARDS */
+			/* @media (max-width: 1280px) {
+      .collection-featured-cards .col-md-6 {
+       height: 50%;
+
+      }
+    } */
+			@media (max-width: 375px) {
+				.collection-featured-cards .col-md-6 {
+					width: 100%;
+				}
+			}
+
+			@media (min-width: 412px) and (max-width: 574px) {
+				.collection-featured-cards .col-md-6 {
+					width: 50%;
+				}
+			}
+
+			/* OFFER */
+			.offer-icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background-color: #000000;
+				margin: 0 auto;
+			}
+
+			.offer-icon i {
+				font-size: 2rem;
+				color: #4e4e4e;
+			}
+
+			.offer img {
+				transition: all 0.3s ease-in-out;
+			}
+
+			.offer h3 {
+				transition: all 0.3s ease-in-out;
+			}
+
+			.offer p {
+				transition: all 0.3s ease-in-out;
+			}
+
+			.offer img:hover {
+				transform: scale(1.1);
+			}
+
+			/* Reveal Animation */
+			/* revealY For Y Axis */
+			.revealY {
+				position: relative;
+				transform: translateY(120px);
+				opacity: 0;
+				transition: all .8s ease;
+			}
+
+			.revealY.active {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			/* revealX For X Axis */
+			.revealX {
+				position: relative;
+				transform: translateX(-120px);
+				opacity: 0;
+				transition: all .8s ease;
+			}
+
+			.revealX.active {
+				transform: translateX(0);
+				opacity: 1;
+			}
+
+			/* CSS for PreLoader */
+			.preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				background-color: #fff;
+			}
+
+			.loader {
+				background-image: url("./img/Loading.gif");
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.main-content {
+				display: none;
+			}
+		</style>
+		<script>
+			const burger = document.querySelector('.burger input');
+			const nav = document.querySelector('#navbarNav');
+			burger.addEventListener('click', function() {
+				nav.classList.toggle('show');
+			});
+		</script>
+		<!-- Javascript for animation on y Axis -->
+		<script type="text/javascript">
+			window.addEventListener('scroll', revealY);
+
+			function revealY() {
+				var reveals = document.querySelectorAll('.revealY');
+				for (var i = 0; i < reveals.length; i++) {
+					var windowheight = window.innerHeight;
+					var revealtop = reveals[i].getBoundingClientRect().top;
+					var revealpoint = 50;
+					if (revealtop < windowheight - revealpoint) {
+						reveals[i].classList.add('active');
+					}
+				}
+			}
+		</script>
+		<!-- Javascript for animation on x Axis -->
+		<script type="text/javascript">
+			window.addEventListener('scroll', revealX);
+
+			function revealX() {
+				var reveals = document.querySelectorAll('.revealX');
+				for (var i = 0; i < reveals.length; i++) {
+					var windowheight = window.innerHeight;
+					var revealtop = reveals[i].getBoundingClientRect().top;
+					var revealpoint = 50;
+					if (revealtop < windowheight - revealpoint) {
+						reveals[i].classList.add('active');
+					}
+				}
+			}
+		</script>
+		<!-- Script for preloader -->
+		<script>
+			window.addEventListener('load', function() {
+				const loader = document.querySelector('.loader');
+				const preloader = loader.parentElement;
+				const mainContent = document.querySelector('.main-content');
+				// Add a transition to the preloader
+				preloader.style.transition = 'opacity 0.5s ease-in-out';
+				// Simulate a longer loading time
+				setTimeout(function() {
+					// Fade out the preloader
+					preloader.style.opacity = 0;
+					preloader.addEventListener('transitionend', function() {
+						preloader.style.display = 'none';
+						mainContent.style.display = 'block';
+					});
+				}, 1000); // 1000 milliseconds = 1 seconds
+			});
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+
+
+/* FONTS  */
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/LEMONMILK-Bold.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'MyCustomFont2';
+    src: url('../font/Futura\ Std\ Heavy.ttf') format('truetype');
+  }
+
+
+
+/* NAVBAR  */
+.navbar-nav .nav-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #745c12;
+}
+
+.navbar-nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+/* Dropdown animation */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  animation: fadeInDown 0.5s;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f9f9f9;
+}
+
+/* BACK TO TOP BUTTON  */
+  #back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(252, 226, 182);
+  color: rgb(87, 24, 24);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#back-to-top-btn:hover {
+  background-color: #f9cb40;
+}
+
+/* OVERALL BUTTON STYLING */
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: bisque;
+}
+
+/* CARD OVERALL STYLINGS */
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* MAIN HEADING H1 RESPONSIVENESS INDEX  */
+@media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-heading {
+    font-size: 50px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .main-heading {
+    font-size: 60px;
+  }
+}
+
+/* HIDES THE ICONS IN THE NAVBAR  */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bi-cart-fill {
+    display: none;
+  }
+
+  .bi-person {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
