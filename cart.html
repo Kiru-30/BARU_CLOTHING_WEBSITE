@@ -110,77 +110,108 @@
 		</header>
 		<main>
 			<!-- CART -->
-			<section id="cart-order-summary">
-				<div class="container" style="padding-top: 100px; padding-bottom: 50px">
-					<div class="row">
-						<div class="col-md-12 col-lg-8">
-							<h3 class="top-bottom">Your Cart</h3>
-							<hr />
-							<div class="d-flex flex-column left-right">
-								<div class="cart-item mb-3">
-									<div class="row align-items-center">
-										<div class="col-4">
-											<img src="./img/shirts/b10.jpg" class="img-fluid" />
-										</div>
-										<div class="col-8">
-											<h5 class="mb-1">Product Name</h5>
-											<p class="mb-0">Price: ₱100.00</p>
-											<p class="mb-0">Quantity: 1</p>
-											<button type="button" class="btn btn-link my-5"> Remove </button>
-										</div>
-									</div>
-								</div>
-								<div class="cart-item mb-3">
-									<div class="row align-items-center">
-										<div class="col-4">
-											<img src="./img/shirts/bw4.jpg" class="img-fluid" />
-										</div>
-										<div class="col-8">
-											<h5 class="mb-1">Product Name</h5>
-											<p class="mb-0">Price: ₱200.00</p>
-											<p class="mb-0">Quantity: 2</p>
-											<button type="button" class="btn btn-link my-5"> Remove </button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-4">
-							<div class="card border-0 top-bottom">
-								<div class="card-body">
-									<h5 class="mb-3">Cart Summary</h5>
-									<div class="d-flex justify-content-between mb-2">
-										<span>Subtotal:</span>
-										<span>₱500.00</span>
-									</div>
-									<div class="d-flex justify-content-between mb-2">
-										<span>Shipping:</span>
-										<span>₱0.00</span>
-									</div>
-									<hr />
-									<div class="d-flex justify-content-between mb-2">
-										<strong>Total:</strong>
-										<strong>₱500.00</strong>
-									</div>
-									<button class="btn w-100 mt-3">Checkout</button>
-								</div>
-							</div>
-						</div>
-					</div>
+<section id="cart-order-summary">
+	<div class="container" style="padding-top: 100px; padding-bottom: 50px">
+	  <div class="row">
+		<div class="col-md-12 col-lg-8">
+		  <h3 class="top-bottom">Your Cart</h3>
+		  <hr />
+		  <div class="d-flex flex-column left-right">
+			<div class="cart-item mb-3">
+			  <div class="row align-items-center">
+				<div class="col-4">
+				  <img src="./img/shirts/b10.jpg" class="img-fluid" />
 				</div>
-			</section>
-		</main>
-		<style>
-			.cart-item {
-				background-color: #f8f9fa;
-				border-radius: 5px;
-				padding: 15px;
-			}
-
-			.cart-item img {
-				border-radius: 5px;
-			}
-		</style>
+				<div class="col-8">
+				  <h5 class="mb-1">Product Name</h5>
+				  <p class="mb-0">Price: ₱350.00</p>
+				  <div class="quantity-control mb-2">
+					<button class="quantity-btn minus-btn">-</button>
+					<input type="number"value="1" class="quantity-input" />
+					<button class="quantity-btn plus-btn">+</button>
+				  </div>
+				  <button type="button" class="btn my-5"> Remove </button>
+				</div>
+			  </div>
+			</div>
+			<div class="cart-item mb-3">
+			  <div class="row align-items-center">
+				<div class="col-4">
+				  <img src="./img/shirts/bw4.jpg" class="img-fluid" />
+				</div>
+				<div class="col-8">
+				  <h5 class="mb-1">Product Name</h5>
+				  <p class="mb-0">Price: ₱350.00</p>
+				  <div class="quantity-control mb-2">
+					<button class="quantity-btn minus-btn">-</button>
+					<input type="number" value="2" class="quantity-input"/>
+					<button class="quantity-btn plus-btn">+</button>
+				  </div>
+				  <button type="button" class="btn my-5"> Remove </button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-12 col-lg-4">
+		  <div class="card border-0 top-bottom">
+			<div class="card-body">
+			  <h5 class="mb-3">Cart Summary</h5>
+			  <div class="d-flex justify-content-between mb-2">
+				<span>Subtotal:</span>
+				<span>₱1050.00</span>
+			  </div>
+			  <div class="d-flex justify-content-between mb-2">
+				<span>Shipping:</span>
+				<span>₱0.00</span>
+			  </div>
+			  <hr />
+			  <div class="d-flex justify-content-between mb-2">
+				<strong>Total:</strong>
+				<strong>₱1050.00</strong>
+			  </div>
+			  <button class="btn w-100 mt-3">Checkout</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  </main>
+  <style>
+	.cart-item {
+	  background-color: #f8f9fa;
+	  border-radius: 5px;
+	  padding: 15px;
+	}
+  
+	.cart-item img {
+	  border-radius: 5px;
+	}
+  
+	.quantity-control {
+	  display: flex;
+	  align-items: center;
+	}
+  
+	.quantity-btn {
+	  font-size: 1rem;
+	  padding: 0.375rem 0.75rem;
+	  border-radius: 0.25rem;
+	  border: none;
+	  background-color: #f8f9fa;
+	  cursor: pointer;
+	}
+  
+	.quantity-input {
+	  width: 50px;
+	  text-align: center;
+	  border: none;
+	  background-color: #f8f9fa;
+	}
+  </style>
+ 
+  
 		<!-- FOOTER -->
 		<footer class="bg-dark text-white py-4">
 			<div class="container">
